@@ -1,196 +1,210 @@
+
 /* Загальні налаштування */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-	font-family: Arial, sans-serif;
-	background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
-	color: white;
-	min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    color: white;
+    min-height: 100vh;
 }
 
 /* Шапка сайту */
 header {
-	background: rgba(20, 20, 50, 0.85);
-	padding: 25px 8%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 20px;
+    background: rgba(20, 20, 50, 0.85);
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 header h1 {
-	font-size: 28px;
-	color: #ffda79;
+    font-size: 28px;
+    color: #ffda79;
 }
 
 nav {
-	display: flex;
-	gap: 25px;
-	flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 nav a {
-	color: white;
-	text-decoration: none;
-	font-size: 16px;
-	transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-	color: #ffda79;
+    color: #ffda79;
 }
 
 /* Основні блоки */
 section {
-	max-width: 1100px;
-	margin: 45px auto;
-	padding: 55px 35px;
-	width: 90%;
-	background: rgba(255, 255, 255, 0.15);
-	border: 1px solid rgba(255, 255, 255, 0.25);
-	border-radius: 25px;
-	text-align: center;
-	backdrop-filter: blur(10px);
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-	transition: 0.3s;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 55px 35px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
 }
 
 section:hover {
-	transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 section h2 {
-	font-size: 32px;
-	margin-bottom: 20px;
-	color: #ffda79;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffda79;
 }
 
 section p {
-	font-size: 18px;
-	line-height: 1.7;
-
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-/* Кнопка */
+/* Кнопки */
 button {
-	margin-top: 25px;
-	padding: 15 px 30px;
-	border: none;
-	border-radius: 30px;
-	background: #ffda79;
-	color: #333;
-	font-weight: bold;
-	cursor: pointer;
-	transition: 0.3s;
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #ffda79;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-	background: #ff9ff3;
-	transform: scale(1.07);
+    background: #ff9ff3;
+    transform: scale(1.07);
 }
 
-/* Підвал*/
+/* Підвал */
 footer {
-	background: rgba(20, 20, 50, 0.85);
-	text-align: center;
-	padding: 25px;
-	margi-top: 60px;
+    background: rgba(20, 20, 50, 0.85);
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
 }
-
-/* Адаптація для телефонів */
-@media (max-width: 700px) {
-	header {
-		justify-content: center;
-		text-align: center;
-	}
-
-	nav {
-		justify-content: center;
-	}
-
-	section h2 {
-		font-size: 25px;
-	}
-}
-
-/* АДАПТАЦІЯ ДЛЯ РІЗНИХ ЕКРАНІВ */
 
 /* Планшети */
 @media (max-width: 900px) {
+    header {
+        padding: 20px 4%;
+    }
 
-	header {padding: 20px 4%;
-	}
-
-	header h1 {
-		font-size: 24px;
-	}
-
-	nav {
-		gap: 15px;
-	}
-
-	section {
-		width: 92%;
-		padding: 40px 25px;
-	}
+    section {
+        width: 92%;
+        padding: 40px 25px;
+    }
 }
 
-/* Телефони*/
+/* Телефони */
 @media (max-width: 600px) {
-	header {
-		flex-direction: column;
-		padding: 20px 10px;
-	}
+    body {
+        font-size: 20px;
+    }
 
-	header h1 {
-		font-size: 23px;
-		text-align: center;
-	}
+    header {
+        flex-direction: column;
+        padding: 25px 15px;
+        text-align: center;
+    }
 
-	nav {
-		flex-direction: column;
-		align-items: center;
-		gap: 15px;
-	}
+    header h1 {
+        font-size: 30px;
+    }
 
-	nav a {
-		font-size: 17px;
-	}
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+    }
 
-	section {
-		width: 92%;
-		margin: 25px auto;
-		padding: 30px 18px;
-		border-radius: 18px;
-	}
+    nav a {
+        font-size: 21px;
+        padding: 8px;
+    }
 
-	section h2 {
-		font-size: 23px;
-	}
+    section {
+        width: 94%;
+        margin: 20px auto;
+        padding: 35px 20px;
+        border-radius: 18px;
+    }
 
-	section h2 {
-		font-size: 23px;
-	}
+    section h2 {
+        font-size: 29px;
+    }
 
-	section p {
-		font-size: 16px;
-	}
+    section p {
+        font-size: 20px;
+        line-height: 1.8;
+    }
 
-	button {
-		width: 100%;
-		max-width: 260px;
-		font-size: 16px;
-	}
+    button {
+        width: 100%;
+        max-width: 320px;
+        min-height: 55px;
+        font-size: 20px;
+    }
 
-	footer {
-		font-size: 14px;
-	}
+    footer {
+        font-size: 18px;
+        padding: 25px 15px;
+    }
 
-	
+
+/* Великий текст для зручного читання */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 24px !important;
+    }
+
+    header h1 {
+        font-size: 38px !important;
+    }
+
+    nav a {
+        font-size: 26px !important;
+        padding: 12px !important;
+    }
+
+    section h2 {
+        font-size: 34px !important;
+    }
+
+    section p {
+        font-size: 24px !important;
+        line-height: 1.8 !important;
+    }
+
+    button {
+        font-size: 24px !important;
+        min-height: 65px !important;
+    }
+
+    footer {
+        font-size: 22px !important;
+    }
+}
+
 }
